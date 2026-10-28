@@ -122,7 +122,7 @@ export interface OperationRecord {
   exitTime: number;
   outcome?: OperationOutcome;
   pnlPct: number;
-  entryName?: EntryName;
+  entryName: EntryName;
   tpPrice?: number;
   slPrice?: number;
   // Best excursion while open (highest high for bullish, lowest low for bearish).
