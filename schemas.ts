@@ -120,7 +120,7 @@ export interface OperationRecord {
   entryTime: number;
   exitPrice: number;
   exitTime: number;
-  outcome?: OperationOutcome;
+  outcome: OperationOutcome;
   pnlPct: number;
   entryName: EntryName;
   tpPrice?: number;
