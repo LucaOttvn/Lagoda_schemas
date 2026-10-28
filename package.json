@@ -1,5 +1,8 @@
 {
   "name": "lagoda_schemas",
   "version": "1.0.0",
-  "types": "schemas.d.ts"
+  "type": "module",
+  "main": "index.js",
+  "types": "schemas.ts",
+  "files": ["index.js", "schemas.ts"]
 }
