@@ -4,10 +4,11 @@ export type EntryName = "grey" | "blue" | "orange" | "red";
 export type Time = number;
 export type LineWidth = 1 | 2 | 3 | 4;
 export type EmaHandler = (candle: Candle) => EmaResult;
+export type Timeframe = "1m" | "5m" | "15m" | "30m" | "1h" | "4h" | "1d" | "1w";
 
 export interface StrategyParams {
   symbol: string;
-  timeframe: string;
+  timeframe: Timeframe;
   from: string;
   to: string;
   tp: number;
