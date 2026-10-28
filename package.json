@@ -1,5 +1,5 @@
 {
-  "name": "Lagoda_schemas",
+  "name": "lagoda_schemas",
   "version": "1.0.0",
   "types": "types.ts"
 }
