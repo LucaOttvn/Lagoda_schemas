@@ -13,7 +13,8 @@ export interface StrategyParams {
   to: string;
   tp: number;
   sl: number
-  ema: number
+  ema1: number
+  ema2: number
   breakevenTriggerPct?: number;
 }
 
