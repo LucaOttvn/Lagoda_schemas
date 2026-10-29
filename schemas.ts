@@ -1,4 +1,4 @@
-export type OperationOutcome = "tp" | "sl" | "breakeven" | "dayEnd";
+export type OperationOutcome = "tp" | "sl" | "dayEnd";
 export type Direction = "bullish" | "bearish";
 export type EntryName = "grey" | "blue" | "orange" | "red";
 export type Time = number;
@@ -15,7 +15,7 @@ export interface StrategyParams {
   sl: number
   ema1: number
   ema2: number
-  breakevenTriggerPct?: number;
+  trailingStopTrigger: number;
 }
 
 export interface StrategyResult {
@@ -138,7 +138,6 @@ export interface OperationStats {
   total: number;
   tp: number;
   sl: number;
-  breakeven: number;
   dayEnd: number;
   wins: number;
   losses: number;
