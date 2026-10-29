@@ -103,8 +103,6 @@ export interface Operation {
   // Running most-adverse price reached while the op was open
   worstPrice?: number;
   originalSl?: number;
-  /** True once the price reaches the breakeven trigger and SL moves to entry. */
-  slMovedToBreakeven?: boolean;
 }
 
 export interface OperationEntry {
