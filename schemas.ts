@@ -1,4 +1,4 @@
-export type OperationOutcome = "tp" | "sl" | "dayEnd";
+export type OperationOutcome = "tp" | "sl" | "dayEnd" | "ema";
 export type Direction = "bullish" | "bearish";
 export type EntryName = "grey" | "blue" | "orange" | "red";
 export type Time = number;
