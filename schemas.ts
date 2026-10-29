@@ -109,6 +109,7 @@ export interface Operation {
 export interface OperationEntry {
   entryTime: number;
   exitTime?: number;
+  exitPrice?: number;
   entryIndex: number;
   entryPrice?: number;
   entryName: EntryName;
