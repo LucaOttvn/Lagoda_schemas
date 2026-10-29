@@ -15,7 +15,8 @@ export interface StrategyParams {
   sl: number
   ema1: number
   ema2: number
-  trailingStopTrigger: number;
+  // This param represents the percentage of tp coverage that triggers the begin of the EMAs crossing checks.
+  emaCrossingChecksTrigger: number;
 }
 
 export interface StrategyResult {
