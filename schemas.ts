@@ -119,10 +119,7 @@ export interface OperationRecord {
   id: string;
   dayKey: string;
   direction: Direction;
-  entryPrice: number;
-  entryTime: number;
-  exitPrice: number;
-  exitTime: number;
+  entry: OperationEntry;
   outcome: OperationOutcome;
   profitAndLossPercentage: number;
   entryName: EntryName;
