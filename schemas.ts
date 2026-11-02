@@ -124,7 +124,7 @@ export interface OperationRecord {
   exitPrice: number;
   exitTime: number;
   outcome: OperationOutcome;
-  pnlPct: number;
+  profitAndLossPercentage: number;
   entryName: EntryName;
   tpPrice?: number;
   slPrice?: number;
@@ -145,8 +145,8 @@ export interface OperationStats {
   wins: number;
   losses: number;
   winRate: number;
-  totalPnlPct: number;
-  avgPnlPct: number;
+  totalprofitAndLossPercentage: number;
+  avgprofitAndLossPercentage: number;
   grossWinPct: number;
   grossLossPct: number;
   profitFactor: number;
