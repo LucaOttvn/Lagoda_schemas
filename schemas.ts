@@ -17,6 +17,7 @@ export interface StrategyParams {
   ema2: number
   // This param represents the percentage of tp coverage that triggers the begin of the EMAs crossing checks.
   emaCrossingTreshold: number;
+  breakevenTreshold: number;
 }
 
 export interface StrategyResult {
