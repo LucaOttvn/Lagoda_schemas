@@ -137,6 +137,7 @@ export interface OperationStats {
   total: number;
   tp: number;
   sl: number;
+  be: number;
   ema: number;
   dayEnd: number;
   wins: number;
