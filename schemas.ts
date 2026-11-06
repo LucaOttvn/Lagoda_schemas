@@ -123,6 +123,8 @@ export interface OperationEntry {
   entryName: EntryName;
 }
 
+export type OperationExitStrategy = 'tp' | 'ema' | 'atr'
+
 export interface OperationRecord {
   id: string;
   dayKey: string;
