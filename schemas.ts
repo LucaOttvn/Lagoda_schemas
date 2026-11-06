@@ -23,7 +23,6 @@ export interface StrategyParams {
 
 export interface ATR {
   period: number,
-  hhv: number,
   multiplier: number
 }
 
