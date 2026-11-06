@@ -85,7 +85,7 @@ export interface StrategyCandle extends Candle {
   dayLow: number
   moving_average_01: number
   moving_average_02: number
-  atr: ATR
+  atr: number
   gap: Gap | null
   currentOperation: Operation | null
   darkGreenLine: number
