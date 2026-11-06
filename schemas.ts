@@ -24,7 +24,8 @@ export interface StrategyParams {
 
 export interface ATR {
   period: number,
-  multiplier: number
+  multiplier: number,
+  treshold: number
 }
 
 export interface StrategyResult {
