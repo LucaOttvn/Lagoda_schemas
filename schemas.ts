@@ -148,6 +148,7 @@ export interface OperationStats {
   total: number;
   tp: number;
   sl: number;
+  atr: number,
   be: number;
   ema: number;
   dayEnd: number;
