@@ -17,7 +17,7 @@ export interface StrategyParams {
   ema2: number
   atr: ATR
   // This param represents the percentage of tp coverage that triggers the begin of the EMAs crossing checks.
-  emaCrossingTreshold: number;
+  emaCrossingTrigger: number;
   // This param represents the percentage of tp coverage that triggers the begin of the breakeven hit check.
   breakevenTrigger: number;
   breakevenMargin: number
