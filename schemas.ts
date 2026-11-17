@@ -164,6 +164,7 @@ export interface OperationStats {
   profitFactor: number;
   winShare: number
   lossShare: number
+  maxDrawdownPct: number
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
