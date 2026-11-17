@@ -167,6 +167,8 @@ export interface OperationStats {
   maxDrawdownPct: number
   grossProfit: number
   grossLoss: number
+  // netProfit represents the actual earned amount in dollars
+  netProfit: number
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
