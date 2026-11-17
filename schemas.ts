@@ -147,28 +147,49 @@ export interface OperationRecord {
 }
 
 export interface OperationStats {
+
+  // Total number of operations (trades) executed.
   total: number;
+  // Number of trades closed by hitting the standard Take Profit.
   tp: number;
+  // Number of trades closed by hitting the standard Stop Loss.
   sl: number;
-  atr: number,
+  // Number of trades closed by the ATR Trailing Stop.
+  atr: number;
+  // Number of trades closed exactly at the breakeven entry price.
   be: number;
+  // Number of trades closed by an EMA crossover exit signal.
   ema: number;
+  // Number of trades force-closed at the end of the trading day.
   dayEnd: number;
+  // Total number of profitable trades.
   wins: number;
+  // Total number of losing trades.
   losses: number;
+  // Win rate as a decimal (0.0 to 1.0). Calculated as: wins / (wins + losses). Breakeven trades are excluded.
   winRate: number;
+  // Sum of all trades' raw percentage returns (e.g., +4.5 means +4.5% total).
   totalprofitAndLossPercentage: number;
+  // The average percentage return per trade.
   avgprofitAndLossPercentage: number;
+  // The sum of percentages from winning trades only.
   grossWinPct: number;
+  // The sum of percentages from losing trades only (stored as a negative number).
   grossLossPct: number;
+  // Total absolute dollars earned from winning trades (net of commissions).
+  grossProfit: number;
+  // Total absolute dollars lost on losing trades (net of commissions, stored as a negative number).
+  grossLoss: number;
+  // The actual bottom-line profit in dollars. Calculated as: grossProfit + grossLoss. 
+  netProfit: number;
+  // Capital efficiency ratio based on dollar amounts: grossProfit / |grossLoss|. A value > 1.0 means the strategy is profitable. Infinity means zero losses.
   profitFactor: number;
-  winShare: number
-  lossShare: number
-  maxDrawdownPct: number
-  grossProfit: number
-  grossLoss: number
-  // netProfit represents the actual earned amount in dollars
-  netProfit: number
+  // Percentage of total "movement" (wins + losses) that came from wins (0.0 to 1.0).
+  winShare: number;
+  // Percentage of total "movement" (wins + losses) that came from losses (0.0 to 1.0).
+  lossShare: number;
+  // The largest peak-to-trough drop in cumulative percentage PnL. Stored as a positive magnitude (e.g., 5.5 means a 5.5% max drawdown).
+  maxDrawdownPct: number;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
